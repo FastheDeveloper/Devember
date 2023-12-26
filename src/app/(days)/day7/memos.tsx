@@ -10,6 +10,7 @@ import React, { useState } from "react"
 import { Audio } from "expo-av"
 import { Recording } from "expo-av/build/Audio"
 import Animated, { useAnimatedStyle, withTiming } from "react-native-reanimated"
+import MemoListItem from "../../../components/day7/MemoListItem"
 const MemosScreen = () => {
   const [recording, setRecording] = useState<Recording>()
   const [memos, setMemos] = useState<string[]>([])
@@ -59,7 +60,10 @@ const MemosScreen = () => {
 
   return (
     <View style={styles.container}>
-      <FlatList data={memos} renderItem={({ item }) => <Text>{item}</Text>} />
+      <FlatList
+        data={memos}
+        renderItem={({ item }) => <MemoListItem uri={item} />}
+      />
 
       <View style={styles.footer}>
         <Pressable
