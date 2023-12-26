@@ -1,6 +1,6 @@
 import { Image, StyleSheet, Text, View } from "react-native"
 import React from "react"
-import TinderCard from "@/components/TinderCard"
+import TinderCard from "../../../components/TinderCard"
 import { Stack } from "expo-router"
 import {
   interpolate,

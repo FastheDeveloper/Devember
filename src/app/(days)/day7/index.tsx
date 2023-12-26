@@ -4,12 +4,8 @@ import { Link, Stack } from "expo-router"
 import MarkdownDisplay from "../../../components/MarkDownDisplay"
 import { SafeAreaView } from "react-native-safe-area-context"
 
-const copy = `# 🎉 Fun with Markdown!
-
-## 🚀 Introduction
-Welcome to this **fun and exciting** markdown guide! Let's dive into the world of Markdown and discover how it makes text formatting cool and easy!
-
-## 🎈 Welcome please continue below
+const copy = `# 🎉VOice Memo 
+Work with the microphone and audio playbock
 `
 
 const DayDetailsScreen = () => {
@@ -18,9 +14,9 @@ const DayDetailsScreen = () => {
       edges={["bottom"]}
       style={{ backgroundColor: "red", flex: 1 }}
     >
-      <Stack.Screen options={{ title: "Day6: TinderSwiper" }} />
+      <Stack.Screen options={{ title: "Day7: Voice Memo" }} />
       <MarkdownDisplay>{copy}</MarkdownDisplay>
-      <Link href={"/day6/tinder"} asChild>
+      <Link href={"/day7/memos"} asChild>
         <Button title="Go to tinder" />
       </Link>
     </SafeAreaView>

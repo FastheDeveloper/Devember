@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View, ScrollView } from "react-native"
 import React from "react"
 import Markdown from "react-native-markdown-display"
-import MarkdownDisplay from "@/components/MarkDownDisplay"
+import MarkdownDisplay from "../../../components/MarkDownDisplay"
 
 const copy = `# 🎉 Fun with Markdown!
 
